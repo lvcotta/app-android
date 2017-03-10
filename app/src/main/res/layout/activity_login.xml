@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/app_margem_vertical"
+    android:paddingLeft="@dimen/app_margem_horizontal"
+    android:paddingRight="@dimen/app_margem_horizontal"
+    android:paddingTop="@dimen/app_margem_vertical"
+    android:orientation="vertical"
+    tools:context="com.example.lorran.contatos.LoginActivity">
+
+    <ImageView
+        android:layout_width="338dp"
+        android:layout_height="156dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:text="E-mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailLabel" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="@string/email_exemplo"
+        android:id="@+id/login_emailImput" />
+
+    <TextView
+        android:text="Senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/senhaLabel" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/login_senhaImput" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btnLogin" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            android:id="@+id/imageButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Cadastre-se"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:onClick="chamarCadastrar"
+            android:id="@+id/login_btnCadastrar" />
+    </LinearLayout>
+
+</LinearLayout>

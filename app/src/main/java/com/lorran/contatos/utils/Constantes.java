@@ -8,4 +8,5 @@ public class Constantes {
     public static final int TELA_CADASTRO = 1;
     public static final String BANCO_DADOS = "Contatos.db";
     public static final int VERSAO_BD = 1;
+    public static final int MAP_PERMISSION_ACCESS_FINE_LOCATION = 9999;
 }
